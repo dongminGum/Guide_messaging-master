@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+
+    tools:context="com.example.sohee.guide_v1.RegisterActivity">
+
+
+    <TextView
+        android:id="@+id/titletxtview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/numedittext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="46dp"
+        android:text="REGISTRATION"
+        android:textColor="#980000"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/numedittext"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_marginBottom="25dp"
+        android:layout_toLeftOf="@+id/nameedittext"
+        android:layout_toStartOf="@+id/nameedittext"
+        android:backgroundTint="#8C8C8C"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=" "
+        android:textColor="#980000" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/registbtn"
+        android:layout_alignRight="@+id/registbtn"
+        android:layout_marginBottom="22dp"
+        android:id="@+id/linearLayout2">
+
+        <ListView
+            android:id="@+id/registlistView"
+            style="@style/AppTheme"
+            android:layout_width="331dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:divider="#8C8C8C"></ListView>
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/nameedittext"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/numedittext"
+        android:layout_alignBottom="@+id/numedittext"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#8C8C8C"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=" "
+        android:textColor="#980000" />
+
+
+    <Button
+        android:id="@+id/registbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/nameedittext"
+        android:layout_toEndOf="@+id/nameedittext"
+        android:layout_toRightOf="@+id/nameedittext"
+        android:backgroundTint="#980000"
+        android:text="ENTER"
+        android:textColor="#FFFFFF"
+        android:textSize="17dp" />
+
+
+</RelativeLayout>
